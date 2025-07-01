@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://tvkkynmy0hmn"]
+
+[ext_resource type="Texture2D" uid="uid://dsxoty8owg1m2" path="res://Art/Legacy-Fantasy - High Forest 2.3/Assets/platform.png" id="1_p6wc7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6wc7"]
+size = Vector2(44, 16)
+
+[node name="platformGreen" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_p6wc7")
+region_enabled = true
+region_rect = Rect2(0, 0, 45, 17)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_p6wc7")
+one_way_collision = true
